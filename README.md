@@ -91,9 +91,9 @@ Page({
 ```
 const imgData = { data: new Uint8Array(frame.data), width: frame.width, height: frame.height}
 const returnTensors = false
-    const flipHorizontal = false
-    const annotateBoxes = false
-    const predictions = await tensorModel.estimateFaces(imgData, returnTensors, flipHorizontal, annotateBoxes)
+const flipHorizontal = false
+const annotateBoxes = false
+const predictions = await tensorModel.estimateFaces(imgData, returnTensors, flipHorizontal, annotateBoxes)
 ```
 `tensorModel.estimateFaces`这个方法允许传入HTMLIMAGE对象、HTMLVIDEO对象、canvas对象和ImageData，但是在小程序里你懂得，我们只能传入canvas对象和ImageData。
 
@@ -106,20 +106,20 @@ const returnTensors = false
 `predictions`会返回一个数组，如果长度为0就是没检测到人脸，长度是多少就是检测到了多少张人脸。数组中会返回包含人脸在当前画面中从0,0开始偏移的位置信息等，格式如下：
 ```
 [
-      {
-        topLeft: [232.28, 145.26],
-        bottomRight: [449.75, 308.36],
-        probability: [0.998],
-        landmarks: [
-          [295.13, 177.64], // 右眼
-          [382.32, 175.56], // 做眼
-          [341.18, 205.03], // 鼻子
-          [345.12, 250.61], // 嘴巴
-          [252.76, 211.37], // 右耳
-          [431.20, 204.93] // 左耳
-        ]
-      }
+  {
+    topLeft: [232.28, 145.26],
+    bottomRight: [449.75, 308.36],
+    probability: [0.998],
+    landmarks: [
+      [295.13, 177.64], // 右眼
+      [382.32, 175.56], // 做眼
+      [341.18, 205.03], // 鼻子
+      [345.12, 250.61], // 嘴巴
+      [252.76, 211.37], // 右耳
+      [431.20, 204.93] // 左耳
     ]
+  }
+]
 ```
 - `topLeft` 当前人脸位置的左上角顶点
 - `bottomRight` 当前人脸位置的右下角定点
