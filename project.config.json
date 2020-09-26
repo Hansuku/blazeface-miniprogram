@@ -36,7 +36,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.12.2",
-  "appid": "wx728931c927128d14",
+  "appid": "",
   "projectname": "tensorflow",
   "debugOptions": {
     "hidedInDevtools": []
