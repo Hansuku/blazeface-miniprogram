@@ -95,7 +95,7 @@ const flipHorizontal = false
 const annotateBoxes = false
 const predictions = await tensorModel.estimateFaces(imgData, returnTensors, flipHorizontal, annotateBoxes)
 ```
-`tensorModel.estimateFaces`这个方法允许传入HTMLIMAGE对象、HTMLVIDEO对象、canvas对象和ImageData，但是在小程序里你懂得，我们只能传入canvas对象和ImageData。
+`tensorModel.estimateFaces`这个方法允许传入HTMLIMAGE对象、HTMLVIDEO对象、canvas对象和ImageData，但是在小程序里你懂得，我们只能传入canvas对象和ImageData。(如有不正请指教，这个事情我还挺头痛的)
 
 ##### 其他参数含义：
 - `returnTensors`:  是否返回tensor数据
