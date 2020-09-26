@@ -1,0 +1,16 @@
+<!--pages/camera/camera.wxml-->
+<view class="container">
+    <camera
+        class="camera"
+        device-position='front'
+        flash='off'
+        binderror='error'
+        frame-size='small'
+    >
+    </camera>
+    <view class="fc"></view>
+    <button class="btn" type="primary" bindtap="addCameraListener">{{ status === 0 ? '开启检测' : '停止检测' }}</button>
+    <text class="result">{{result}}</text>
+    <image mode="aspectFill" class="result-img" src="{{ faceImg }}"></image>
+</view>
+
