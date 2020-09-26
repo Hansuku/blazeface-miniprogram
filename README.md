@@ -1,10 +1,12 @@
 ### 基于blazeface的小程序人脸识别实例
 
 ### Feature
-基于微信creame的api，对返回的帧使用blazeface
+基于微信creame的api，对返回的帧使用blazeface解析人脸
+
 ![demo](https://www.hansuku.com/wp-content/uploads/2020/09/d83d65b6-5d01-42c6-86db-4aeeb5e7c511.png)
+
 ### 如何演示
-下载这个仓库，然后在小程序里导入项目即可，appid可以用测试号
+下载这个仓库，然后在小程序里导入项目即可，appid可以用测试号，代码相对都比较简单，关键的地方加了注释
 
 ### 如何在你的项目里植入blazeface
 首先先去申请下`tensorflow.js`小程序版本的插件，点击[链接](https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx6afed118d9e81df9)
